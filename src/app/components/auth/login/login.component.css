@@ -1,7 +1,7 @@
 .background {
   height: 96vh;
   width: 100%;
-  background-color: #abdeee;
+  background-color: #aaaeee;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -9,7 +9,11 @@
 h2 {
   text-align: center;
   margin-top: 0%;
+  color: #656bb3;
 }
 p-card {
   width: 30%;
+}
+button {
+  margin-top: 20px;
 }
