@@ -2,8 +2,15 @@
 
 <div class="background">
   <p-card>
-    <div class="p-fluid p-formgrid p-grid" [formGroup]="formLogin">
-    <h2>Login</h2>
+    <div class="p-fluid p-formgrid p-grid" [formGroup]="formSignup">
+    <h2>Registro</h2>
+    <div class="p-field p-col-12 p-md-6">
+      <label for="username">Nombre de usuario</label>
+      <div class="p-inputgroup">
+        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+        <input formControlName="username" id="username" type="text" pInputText placeholder="Ingrese su nombre de usuario">
+      </div>
+    </div>
     <div class="p-field p-col-12 p-md-6">
       <label for="email">Correo electrónico</label>
       <div class="p-inputgroup">
@@ -19,10 +26,10 @@
       </div>
     </div>
     <div class="p-field p-col-12 p-md-6">
-      <button pButton type="button" label="Ingresar" (click)="ingresar()"></button>
+      <button pButton type="button" label="Registrarme" (click)="registrarme()"></button>
     </div>
     <div class="p-field p-col-12 p-md-6">
-      <button pButton class="p-button-sm p-button-danger p-button-text"  type="button" label="Registrarse" (click)="registrarse()"></button>
+      <button pButton class="p-button-sm p-button-danger p-button-text"  type="button" label="Ya tengo cuenta" (click)="login()"></button>
     </div>
   </div>
   </p-card>

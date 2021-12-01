@@ -1,1 +1,23 @@
-<p>home works!</p>
+<p-toolbar>
+  <div class="p-toolbar-group-left">
+      <!-- <p-button label="New" icon="pi pi-plus" class="p-button-sm"></p-button> -->
+      <h4>¡Hola {{username}}!</h4>
+  </div>
+  <!-- <div class="p-toolbar-group-center">
+    <h4>¡Hola {{username}}!</h4>
+  </div> -->
+  <div class="p-toolbar-group-right">
+      <button pButton (click)="logOut()" label="Cerrar sesión" icon="pi pi-power-off" class="p-button-text p-button-text p-button-sm"></button>
+  </div>
+</p-toolbar>
+<div style="align-items: center; align-content: center; justify-content: center;">
+  <p-carousel [value]="fotos" [numVisible]="3" [numScroll]="1">
+    <ng-template let-foto pTemplate="item">
+      <p-image src="../../../../assets/{{foto}}.jpg" alt="Image" height="500">
+        <ng-template pTemplate="indicator">
+            Indicator Content
+        </ng-template>
+      </p-image>
+    </ng-template>
+  </p-carousel>
+</div>
